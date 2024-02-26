@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HyperLink Image Demo</title>
+<link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+   <h2>HTML Image Example</h2>  
+    <img src="images/goodmorning.jpg" alt="Good Morning Friends" border="5" width="20%" height="20%"/> 
+
+    <br/>
+    <br/>
+
+    <h2>USING FIGURE TAG </h2>
+   <figure>  
+    <img src="images/tajmahal.jpg" alt="Taj Mahal"/>  
+    <figcaption>Fig.1.1 - A front view of the great Taj Mahal in Agra.</figcaption>
+</figure>  
+
+<br/>
+<br/>
+
+<figure>
+  <img src="images/kookaburra.jpg" alt="Kooaburra">
+  <img src="images/pelican.jpg" alt="Pelican stood on the beach">
+  <img src="images/lorikeet.jpg" alt="Cheeky looking Rainbow Lorikeet">
+  <figcaption>Australian Birds. From left to right, Kookburra, Pelican and Rainbow Lorikeet.<br/>Contact Here: - <a href="#">Chandan</a></figcaption>
+</figure>
+
+<br/>
+<br/>
+
+<h2>USING PICTURE TAG - RESIZE BROWSER - IMAGE WILL CHANGE  </h2>
+<picture>
+  <source media="(min-width: 650px)" srcset="images/img_food.jpg">
+  <source media="(min-width: 465px)" srcset="images/img_car.jpg">
+  <img src="images/img_girl.jpg">
+</picture>
+
+</body>
+</html>

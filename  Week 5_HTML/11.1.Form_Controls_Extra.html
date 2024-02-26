@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Control Other</title>
+
+</head>
+<body>
+<form action="server url" method="get or post(default is get)"> 
+
+<h3>MULTIPLE SELECTION - PRESS CONTROL THEN SELECT</h3>
+<label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  
+<br/> 
+<br/>
+ <label for="datalistexample">DataList Example:</label>  
+<!-- 
+An <input> element with pre-defined values in a <datalist> 
+
+The <datalist> tag is used to provide an "autocomplete" feature on 
+<input> elements. Users will see a drop-down list of pre-defined 
+options as they input data.
+
+-->
+<input list="browsers">
+  <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+   </datalist>
+  
+<br/> 
+<br/>
+
+<label for="datalistexample">OptionGroup Example:</label>
+   <select name="country1" id="country1">
+      <optgroup label="Australia">
+           <option value ="sydney">Sydney</option>
+           <option value ="melbourne">Melbourne</option>
+      </optgroup>
+
+      <optgroup label="New Zealand">
+          <option value ="cromwell">Cromwell</option>
+          <option value ="queenstown">Queenstown</option>
+      </optgroup>
+</select>
+
+<br/> 
+<br/>
+
+<!-- 
+
+A search field typically behaves like a regular text field, 
+but in some browser like Google Chrome and Apple Safari as soon as you start 
+typing in a search box a small cross appears on the right side of the field 
+that lets you quickly clear the search field.
+
+ -->
+<label for="search">Search:</label>  
+    <input type="search" id="mysearch" name="mysearch" placeholder="Search"/>
+ 
+<br/> 
+<br/>
+
+<h4>HIDDEN TEXT FIELD..VIEW SOURCE CODE..</h4>
+<input type="hidden" name="hiddentextfield" id="hiddentextfield">
+
+<input type="submit" value="Register">
+
+<input type="image" src="images/goodmorning.jpg" width="15%" height="15%">
+
+</form>  
+
+</body>
+</html>
